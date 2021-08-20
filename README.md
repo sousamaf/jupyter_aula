@@ -8,8 +8,13 @@ Jupyter Notebook para as disciplinas de ministradas pelo professor Marco Antonio
 
 docker pull sousamaf/jupyter_aula
 
+docker run -it -p 8888:8888 -v ~/aula:/tf/work sousamaf/jupyter_aula
+
+Obs: após a primera execução altere o proprietário do diretório "aula" criado em seu home:
+sudo chown -R 1000:1000 aula
+
 ## Para clonar o projeto:
-git clone https://github.com/sousamaf/jupyter_ia.git
+git clone https://github.com/sousamaf/jupyter_aula.git
 
 ## Para construi a imagem docker:
 docker-compose build 
