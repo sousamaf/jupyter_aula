@@ -3,10 +3,15 @@ version: "3"
 services: 
     jupyter:
         build: ./jupyter_aula
+        restart: always
         environment: 
             - JUPYTER_ENABLE_LAB=yes
+            - JUPYTER_TOKEN=aula
+            - NB_UID=1000
+            - NB_GUID=1000
+            - RESTARTABLE=yes
         ports: 
             - 8888:8888
             - 6006:6006
-        volumes: 
-            - ./data/aula:/tf/work
+        volumes:
+            - $HOME/notebooks:/tf/work
