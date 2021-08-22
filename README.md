@@ -10,10 +10,6 @@ Para CPU
 docker pull sousamaf/jupyter_aula
 docker run -d -it -p 8888:8888 sousamaf/jupyter_aula
 
-Para GPU:
-docker pull sousamaf/jupyter_aula:gpu
-docker run -d -it -p 8888:8888 sousamaf/jupyter_aula:gpu
-
 Será criado o diretório "notebooks" em seu home para
 persistir os arquivos criados durante o uso da ferramenta.
 
