@@ -68,7 +68,7 @@ EXPOSE 8888
 
 
 #RUN apt-get update && apt-get install wget && groupadd -g 1000 aula && useradd -d /home/aula -m aula -u 1000 -g 1000
-RUN apt-get update && apt-get install -y vim tmux
+RUN apt-get update && apt-get install -y openssh-client vim tmux
 RUN rm -f /etc/localtime
 RUN ln -sf /usr/share/zoneinfo/America/Araguaina /etc/localtime
 # RUN apt -y install tzdata
