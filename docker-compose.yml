@@ -10,6 +10,8 @@ services:
             - NB_UID=1000
             - NB_GUID=1000
             - RESTARTABLE=yes
+            - TZ=America/Araguaina
+            - DEBIAN_FRONTEND=noninteractive
         ports: 
             - 8888:8888
             - 6006:6006
