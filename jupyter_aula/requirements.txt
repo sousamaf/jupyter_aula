@@ -21,6 +21,7 @@ psycopg2-binary
 pycairo
 cycler==0.10.0
 dataclasses
+dataprep
 decorator==5.0.9
 defusedxml==0.7.1
 dill==0.3.4
